@@ -1,0 +1,27 @@
+:root{--ink:#1b2a41;--paper:#f6f4ef;--brass:#b07d2b;--line:#d9d4c7;--cn:#1f5f8b;--db:#2f7d5b;--cs:#8a3f5e}
+body{font-family:'Almarai','Segoe UI',Tahoma,sans-serif;background:var(--paper);color:var(--ink);line-height:1.8}
+.navbar{background:var(--ink)}
+.navbar .nav-link{color:#d8dde6}.navbar .nav-link.active{color:#fff;border-bottom:2px solid var(--brass)}
+.navbar-brand{color:#fff!important;font-weight:800}
+.hero{background:var(--ink);color:#fff;padding:3rem 0 4.5rem;border-bottom:4px solid var(--brass)}
+.hero h1{font-weight:800;font-size:clamp(1.7rem,4vw,2.6rem)}
+.course-card{border:1px solid var(--line);border-top:6px solid var(--c);background:#fff;border-radius:6px;cursor:pointer;transition:transform .15s,box-shadow .15s;height:100%}
+.course-card:hover,.course-card.active{transform:translateY(-3px);box-shadow:0 8px 20px rgba(27,42,65,.15)}
+.course-card.active{outline:2px solid var(--c)}
+.course-card .ic{font-size:2rem;color:var(--c)}
+.cn1{--c:var(--cn)}.db1{--c:var(--db)}.cs2{--c:var(--cs)}
+.pull-up{margin-top:-3rem}
+.accordion-item{border:1px solid var(--line);margin-bottom:.75rem;border-radius:6px!important;overflow:hidden}
+.accordion-button:not(.collapsed){background:#fff;color:var(--ink);box-shadow:none}
+.dropzone{border:2px dashed var(--brass);border-radius:8px;padding:1.5rem;text-align:center;background:#fffaf0;cursor:pointer}
+.dropzone.drag{background:#fbefd5}
+.countdown{font-variant-numeric:tabular-nums;font-weight:800;color:var(--brass)}
+.countdown.urgent{color:#b3261e}
+.closed-box{background:#f1e4e3;border:1px solid #d9b3b0;color:#8a1f18;border-radius:6px;padding:.8rem 1rem}
+.panel{background:#fff;border:1px solid var(--line);border-radius:6px;padding:1.5rem}
+.btn-brass{background:var(--brass);color:#fff}.btn-brass:hover{background:#966a22;color:#fff}
+.toast-container{z-index:2000}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.hw-text{white-space:pre-wrap;background:#fff;border:1px solid var(--line);border-radius:6px;padding:.7rem 1rem}
+.gate{position:fixed;inset:0;background:var(--paper);z-index:3000;display:flex;align-items:center;justify-content:center;padding:1rem}.gate .panel{width:100%;max-width:400px}
+.locked>:not(.gate){display:none!important}
