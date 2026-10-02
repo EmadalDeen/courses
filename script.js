@@ -9,7 +9,7 @@ const COURSES = {
   CN1: { ar: 'شبكات الحاسوب 1', en: 'Computer Networks 1', icon: 'fa-network-wired', cls: 'cn1' },
   CN2: { ar: 'شبكات الحاسوب 2', en: 'Computer Networks 2', icon: 'fa-network-wired', cls: 'cn2' },
   DB1: { ar: 'قواعد البيانات 1', en: 'Databases 1', icon: 'fa-database', cls: 'db1' },
-  CS2: { ar: 'مهارات الحاسوب 2', en: 'Computer Science 2', icon: 'fa-laptop-code', cls: 'cs2' }
+  CS2: { ar: 'مهارات الحاسوب 2', en: 'Computer Skills 2', icon: 'fa-laptop-code', cls: 'cs2' }
 };
 const ADMIN_KEY = 'uni_admin_db_v3', SUBS_KEY = 'uni_subs_v3';
 const jget = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } };
